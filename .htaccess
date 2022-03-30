@@ -1,0 +1,111 @@
+Options All -Indexes +FollowSymLinks -MultiViews
+<IfModule mod_deflate.c>
+  <FilesMatch "\.(css|js|xml)$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png A604800
+  ExpiresByType image/gif A604800
+  ExpiresByType image/jpg A604800
+  ExpiresByType image/jpeg A604800
+  ExpiresByType text/javascript A604800
+  ExpiresByType application/x-javascript A604800
+  ExpiresByType text/css A604800
+</IfModule>
+<ifmodule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{HTTPS} off
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	
+	#RewriteRule ^consulta/([A-Z0-9-]+)$										index.php?mod=consulta&opc=reg&codigo=$1 [QSA,L,NC]
+
+
+	RewriteRule ^([a-z0-9-]+)$							index.php?mod=inicio&url=$1 [QSA,L,NC]
+	RewriteRule ^visita$								index.php?mod=inicio&url=$1 [QSA,L,NC]
+	RewriteRule ^informacion/$							index.php?mod=informacion&opc=reg [QSA,L,NC]
+	RewriteRule ^ofertas/$							index.php?mod=ofertas&opc=reg [QSA,L,NC]
+	RewriteRule ^galeria/$							index.php?mod=galeria&opc=reg [QSA,L,NC]
+	RewriteRule ^localizacion/$							index.php?mod=localizacion&opc=reg [QSA,L,NC]
+	RewriteRule ^mision-vision/$							index.php?mod=misionvision&opc=reg [QSA,L,NC]
+	
+	RewriteRule ^faciales-basicos/$										index.php?mod=basicos&opc=reg [QSA,L,NC]
+	RewriteRule ^tratamientos-faciales/$							index.php?mod=tratamientos&opc=reg [QSA,L,NC]
+	RewriteRule ^tratamientos-corporales/$						index.php?mod=corporales&opc=reg [QSA,L,NC]
+	RewriteRule ^masajes/$														index.php?mod=masajes&opc=reg [QSA,L,NC]
+	RewriteRule ^tratamiento-post-operatorio/$				index.php?mod=post&opc=reg [QSA,L,NC]
+	
+
+	RewriteRule ^contactanos/$							index.php?mod=contactanos&opc=reg [QSA,L,NC]
+	RewriteRule ^habitaciones/$							index.php?mod=habitaciones&opc=reg [QSA,L,NC]
+	RewriteRule ^traslados/$							index.php?mod=traslados&opc=reg [QSA,L,NC]
+	RewriteRule ^renta/$								index.php?mod=renta&opc=reg [QSA,L,NC]
+	RewriteRule ^carrito/$								index.php?mod=pago&opc=reg [QSA,L,NC]
+	RewriteRule ^servicios/$							index.php?mod=servicio&opc=reg [QSA,L,NC]
+	RewriteRule ^servicios/([0-9]+)-([a-z0-9-]+)$					index.php?mod=servicio&opc=ver&id=$1&tit=$2 [QSA,L,NC]
+	RewriteRule ^destino/$								index.php?mod=destino&opc=reg [QSA,L,NC]
+	RewriteRule ^destino/([0-9]+)\-([a-z0-9-]+)$					index.php?mod=destino&opc=ver&id=$1&tit=$2 [QSA,L,NC]
+	RewriteRule ^paquetes/$								index.php?mod=paquetes&opc=reg [QSA,L,NC]
+	RewriteRule ^vacacionales/$								index.php?mod=vacacionales&opc=reg [QSA,L,NC]
+	RewriteRule ^cruceros-skorpios/$								index.php?mod=cruceros-skorpios&opc=reg [QSA,L,NC]
+	RewriteRule ^giras-estudio/$								index.php?mod=giras-estudio&opc=reg [QSA,L,NC]
+	RewriteRule ^empresa/$								index.php?mod=empresa&opc=reg [QSA,L,NC]
+	RewriteRule ^paquetes/([0-9]+)\-([a-z0-9-]+)$					index.php?mod=paquetes&opc=ver&id=$1&tit=$2 [QSA,L,NC]
+	RewriteRule ^tour/$								index.php?mod=tour&opc=reg [QSA,L,NC]
+	RewriteRule ^busqueda/$								index.php?mod=busqueda&opc=reg [QSA,L,NC]
+	RewriteRule ^tour/destino/([0-9]+)\-([a-z0-9-]+)/$				index.php?mod=tour&opc=cat&id=$1&tit=$2 [QSA,L,NC]
+	RewriteRule ^tour/destino/([0-9]+)\-([a-z0-9-]+)/([0-9]+)$			index.php?mod=tour&opc=cat&id=$1&tit=$2&p=$3 [QSA,L,NC]
+	RewriteRule ^tour/([0-9]+)$							index.php?mod=tour&opc=reg&p=$1 [QSA,L,NC]
+	RewriteRule ^tour/([0-9]+)\-([a-z0-9-]+)$					index.php?mod=tour&opc=ver&id=$1&tit=$2 [QSA,L,NC]
+
+	RewriteRule ^tours/$								index.php?mod=tourold&opc=reg [QSA,L,NC]
+	RewriteRule ^tours/([a-z0-9-]+)/$		index.php?mod=tourold&opc=ver&tit=$1 [QSA,L,NC]
+	
+
+
+	RewriteRule ^noticias/$								index.php?mod=articulo&opc=reg [QSA,L,NC]
+	RewriteRule ^noticias/([0-9]+)$							index.php?mod=articulo&opc=reg&p=$1 [QSA,L,NC]
+	RewriteRule ^noticias/([0-9]+)\-([a-z0-9-]+)$					index.php?mod=articulo&opc=ver&id=$1&tit=$2 [QSA,L,NC]
+	RewriteRule ^ubicacion/$							index.php?mod=ubicacion [QSA,L,NC]
+	RewriteRule ^pagina/([a-z-]+)/([a-z0-9-]+)$					index.php?mod=pagina&opc=ver&npcat=$1&tit=$2 [QSA,L,NC]
+	RewriteRule ^fotos/$								index.php?mod=foto&opc=cat [QSA,L,NC]
+	RewriteRule ^fotos/([0-9]+)$							index.php?mod=foto&opc=cat&p=$1 [QSA,L,NC]
+	RewriteRule ^fotos/([a-z-]+)/([0-9]+)$						index.php?mod=foto&opc=cat&npcat=$1&p=$2 [QSA,L,NC]
+	RewriteRule ^fotos/([a-z-]+)/([0-9]+)\-([a-zA-Z0-9-]+)/([0-9]+)$		index.php?mod=foto&opc=reg&npcat=$1&nscat=$3&cat=$2&p=$4 [QSA,L,NC]
+	RewriteRule ^videos/?$								index.php?mod=video&opc=cat [QSA,L,NC]
+	RewriteRule ^videos/([0-9]+)$							index.php?mod=video&opc=cat&pp=$1 [QSA,L,NC]
+	RewriteRule ^videos/([0-9]+)\-([a-zA-Z0-9-]+)/([0-9]+)$				index.php?mod=video&opc=reg&cat=$1&tit=$2&p=$3[QSA,L,NC]
+	RewriteRule ^catalogo/$								index.php?mod=producto&option=browse [QSA,L]
+	RewriteRule ^catalogo/([0-9]+)$							index.php?mod=producto&option=browse&p=$1 [L]
+	RewriteRule ^catalogo/([a-z-]+)/$						index.php?mod=producto&option=category&catp=$1&p=$2 [QSA,L]
+	RewriteRule ^catalogo/([a-z-]+)/([a-z-]+)/$					index.php?mod=producto&option=category&catp=$1&cats=$2&p=$3 [QSA,L]
+	RewriteRule ^catalogo/([a-z-]+)/([0-9]+)$					index.php?mod=producto&option=category&catp=$1&p=$2 [QSA,L]
+	RewriteRule ^catalogo/([a-z-]+)/([a-z-]+)/([0-9]+)$				index.php?mod=producto&option=category&catp=$1&cats=$2&p=$3 [QSA,L]
+	RewriteRule ^buscar/$								index.php?mod=producto&option=buscar [QSA,L]
+	RewriteRule ^buscar/([0-9]+)$							index.php?mod=producto&option=browse&p=$1 [L]
+	RewriteRule ^catalogo/([a-z-]+)/([0-9]+)-([a-z0-9-]+)$				index.php?mod=producto&option=view&catp=$1&id=$2  [L]
+	RewriteRule ^catalogo/([a-z-]+)/([a-z-]+)/([0-9]+)-([a-z0-9-]+)$		index.php?mod=producto&option=view&catp=$1&cats=$2&id=$3 [L]
+	
+
+
+	RewriteRule ^habitacion/([0-9]+)\-([a-z0-9-]+)$					index.php?mod=habitacion&opc=ver&id=$1&tit=$2 [QSA,L,NC]
+
+	RewriteRule ^miorden/$																index.php?mod=checkmyorder&opc=reg [QSA,L,NC]
+	RewriteRule ^miorden/([a-z0-9-]+)-([a-z0-9-]+)-([a-z0-9-]+)-([a-z0-9-]+)-([a-z0-9-]+)$					index.php?mod=checkmyorder&opc=reg&precio=$1&tit=$2&f_llegada=$3&f_salida=$4&idhabitacion=$5 [QSA,L,NC]
+	RewriteRule ^resultado/de/transaccion$ 									index.php?mod=resultadopago [QSA,L,NC]
+	RewriteRule ^final/post/comprobante/webpay$ 							index.php?mod=final [QSA,L,NC]
+	RewriteRule ^tu-orden/?$      											plantilla/checkmyorder/orden.php? [QSA,L]
+
+	RewriteRule ^check/([a-z0-9-]+)$										index.php?mod=check&opc=reg&codigo=$1 [QSA,L,NC]
+
+	ErrorDocument 403: "/plantilla/error/403.php"
+	ErrorDocument 404: "/plantilla/error/404.php"
+	ErrorDocument 405: "/plantilla/error/405.php"
+</ifmodule>
