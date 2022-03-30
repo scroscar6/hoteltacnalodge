@@ -29,7 +29,7 @@
       </main>
     </div>
   </div>
-  <a href="https://api.whatsapp.com/send?phone=51981344774&text=Hola%2C%20quiero%20mas%20informaci%C3%B3n" class="btn-wsp" target="_blank">
+  <a href="https://api.whatsapp.com/send?phone=51977212027&text=Hola%2C%20quiero%20mas%20informaci%C3%B3n" class="btn-wsp" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
   </a>
 
