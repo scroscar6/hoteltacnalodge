@@ -8,7 +8,7 @@ font-weight: bold;
 text-transform: uppercase;
 margin-top: 25px;
 margin-bottom: 10px;
-color: #f0e0d3;">Consulta tu Reserva</h3>
+color: #d4cfc8;">Consulta tu Reserva</h3>
             <br>
         </div>
   </section>
@@ -16,7 +16,7 @@ color: #f0e0d3;">Consulta tu Reserva</h3>
 <section  class="RoomsGridstyles__Wrapper-sc-16s5weo-2 ksBqRC">
   <section  class="RoomsGridSectionstyles__Wrapper-jsch8l-1 eSyfOd">
     
-      <div style="background-color: #f0e0d3;
+      <div style="background-color: #d4cfc8;
 padding: 10px;
 border-radius: 7px;">
         <span  class="Noticestyles__Text-sc-1l2bpf5-0 bTPjbh" style="color: #5e7468;">
@@ -41,7 +41,7 @@ border-radius: 7px;">
     background-color: #5e7468;
     border: none;
     border-radius: 7px;
-    color: #f0e0d3;
+    color: #d4cfc8;
     font-size: 17px;
     text-transform: uppercase;
   }

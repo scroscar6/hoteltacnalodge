@@ -70,8 +70,8 @@
         text-transform: uppercase;
         margin-top: 60px;
         margin-bottom: 10px;
-        color: #571A28;">Nuestras Habitaciones</h3>
-        <h5 style="text-align: center;color: #571A28;">Habitaciones Disponibles para su reserva</h5>
+        color: #5e7468;">Nuestras Habitaciones</h3>
+        <h5 style="text-align: center;color: #5e7468;">Habitaciones Disponibles para su reserva</h5>
         <br>
     </div>
   </section>
@@ -104,13 +104,13 @@
       <?php foreach ($ListaHabitaciones as $datos): ?>
         <?php $datos = convertObj($datos); ?>
         <li class="RoomsGridSectionRoomstyles__Wrapper-sc-1qrgj78-3 bRadcm">
-          <button type="button" class="RoomsGridSectionRoomstyles__Button-sc-1qrgj78-0 jRceAf" style="background-color: #571A28;border-radius: 10px;">
-            <h3 class="RoomsGridSectionRoomstyles__Title-sc-1qrgj78-2 kQLteu" style="font-size: 25px;font-weight: bold;color: #f0e0d3;margin:0px;margin-top: 20px;"><?php echo $datos->titulo;?></h3>
+          <button type="button" class="RoomsGridSectionRoomstyles__Button-sc-1qrgj78-0 jRceAf" style="background-color: #5e7468;border-radius: 10px;">
+            <h3 class="RoomsGridSectionRoomstyles__Title-sc-1qrgj78-2 kQLteu" style="font-size: 25px;font-weight: bold;color: #d4cfc8;margin:0px;margin-top: 20px;"><?php echo $datos->titulo;?></h3>
               <picture>
                 <img alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;" src="<?php echo $URLBaseCDN;?>/media/habitacion/image/<?php echo $datos->id;?>/<?php echo $datos->imagen;?>" class="sc-gJWqzi caFUvj">
               </picture>
               <a style="text-decoration: navajowhite;text-transform: uppercase;" href="<?php echo $URLBase;?>/habitacion/<?php echo $datos->id;?>-<?php echo urls_amigables($datos->titulo);?>">
-                <span style="font-size: 18px;background-color: #f0e0d3;color: #571A28;border-radius: 5px;" class="RoomsGridSectionRoomstyles__CTA-sc-1qrgj78-1 jUwciz">Detalles</span>
+                <span style="font-size: 18px;background-color: #d4cfc8;color: #5e7468;border-radius: 5px;" class="RoomsGridSectionRoomstyles__CTA-sc-1qrgj78-1 jUwciz">Detalles</span>
               </a>
           </button>
         </li>
@@ -118,7 +118,7 @@
     </ul>
   </section>
 </section>
-<div class="container-fluid" style="background-color: #f0e0d3;padding-left: 0px;padding-right: 0px;">
+<div class="container-fluid" style="background-color: #d4cfc8;padding-left: 0px;padding-right: 0px;">
   <section>
         <div class="col-md-12">
             <h3 style="text-align: center;
@@ -128,8 +128,8 @@
             text-transform: uppercase;
             margin-top: 60px;
             margin-bottom: 10px;
-            color: #571A28;">Nuestros Servicios</h3>
-            <h5 style="text-align: center;color: #571A28;">Atención de primera para nuestros clientes</h5>
+            color: #5e7468;">Nuestros Servicios</h3>
+            <h5 style="text-align: center;color: #5e7468;">Atención de primera para nuestros clientes</h5>
             <br>
         </div>
         <div class="container">
@@ -164,8 +164,8 @@
                   <button type="button" class="RoomsGridSectionRoomstyles__Button-sc-1qrgj78-0 jRceAf" style="background-color: transparent;border: 0 #c9c9c9 solid;">
                     <h3 class="RoomsGridSectionRoomstyles__Title-sc-1qrgj78-2 kQLteu"><a style="text-decoration: none;
 font-size: 18px;
-color: #f0e0d3;
-background-color: #571A28;
+color: #d4cfc8;
+background-color: #5e7468;
 padding-top: 10px;
 padding-bottom: 10px;
 padding-right: 13px;
@@ -189,7 +189,7 @@ border-radius: 8px;" href="<?php echo $xenlace; ?>"><?php echo $ls0->titulo;?></
 </div>
 
 
-<div class="container-fluid" style="background-color: #f0e0d3;padding-left: 0px;padding-right: 0px;">
+<div class="container-fluid" style="background-color: #d4cfc8;padding-left: 0px;padding-right: 0px;">
   <section>
         <div class="col-md-12">
             <h3 style="text-align: center;
@@ -199,8 +199,8 @@ font-weight: bold;
 text-transform: uppercase;
 margin-top: 25px;
 margin-bottom: 10px;
-color: #571A28;">Ubicación</h3>
-            <h5 style="text-align: center;color: #571A28;">Estamos en la zona centrica de la cuidad de Ilo</h5>
+color: #5e7468;">Ubicación</h3>
+            <h5 style="text-align: center;color: #5e7468;">Estamos en la zona centrica de la cuidad de Ilo</h5>
             <br>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1130.361067350296!2d-71.34452471548968!3d-17.647027118481525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91445b050847b29f%3A0x3ae6a44a0c85b152!2sHostal%20Coral%20Ilo!5e0!3m2!1ses!2spe!4v1646926791830!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -215,30 +215,30 @@ color: #571A28;">Ubicación</h3>
 <style>
   #birthday{
     float: left;
-    border: 1px solid #f0e0d3;
-    background:#f0e0d3;
+    border: 1px solid #d4cfc8;
+    background:#d4cfc8;
     text-align: center;
     border-radius: 6px;
     color: #666;
     font-size: 17px;
     -webkit-appearance: none;
     font-weight: bold;
-    color:#571A28;
+    color:#5e7468;
     font-family: 'Nunito', sans-serif;
     width: 110px;
     height: 45px;
 }
 #birthday2{
     float: left;
-    border: 1px solid #f0e0d3;
-    background:#f0e0d3;
+    border: 1px solid #d4cfc8;
+    background:#d4cfc8;
     text-align: center;
     border-radius: 6px;
     color: #666;
     font-size: 17px;
     -webkit-appearance: none;
     font-weight: bold;
-    color:#571A28;
+    color:#5e7468;
     font-family: 'Nunito', sans-serif;
     width: 110px;
     height: 45px;
@@ -248,7 +248,7 @@ color: #571A28;">Ubicación</h3>
   margin-right: 14px;
   font-weight: bold;
   text-transform: capitalize;
-  color: #571A28;
+  color: #5e7468;
   font-size: 24px;
   font-family: var(--bs-body-font-family);
 }

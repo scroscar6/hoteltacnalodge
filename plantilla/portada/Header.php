@@ -1,7 +1,7 @@
 <?php if ( $detectM->isMobile() ||  $detectM->isTablet()): ?>
 
         <header>
-          <div class="container-fluid" id="property-header-login" style="background-color: #571A28;">
+          <div class="container-fluid" id="property-header-login" style="background-color: #5e7468;">
             <div class="row">
               <div class="col-4" style="text-align: center;">
                 <a aria-label="Hotel Coral Ilo"  href="<?php echo $URLBase;?>/" class="">
@@ -12,10 +12,10 @@
               </div>
               <div class="col-8"  style="text-align: center;">
                <ul style="display: inline-flex;list-style: none;margin-top: 1rem;margin-bottom: 1rem;padding-left: 0rem;">
-                 <li class="enlacemenu"><a style="text-decoration:none;color:#571A28;FONT-SIZE: 12px;" href="#" onclick="doGTranslate('es|es')">Español</a></li>
-                 <li class="enlacemenu"><a style="text-decoration:none;color:#571A28;FONT-SIZE: 12px;" href="#" onclick="doGTranslate('es|en')">Inglés</a></li>
-                 <li class="enlacemenu" style="width: 40px;text-align: center;"><a style="text-decoration:none;color:#571A28;" href="<?php echo $Config_DatoFacebook;?>"><i class="fa-brands fa-facebook-f"></i></a></li>
-                 <li class="enlacemenu" style="width: 40px;text-align: center;"><a style="text-decoration:none;color:#571A28;" href="<?php echo $Config_DatoGoogle;?>"><i class="fa-brands fa-instagram"></i></a></li>
+                 <li class="enlacemenu"><a style="text-decoration:none;color:#5e7468;FONT-SIZE: 12px;" href="#" onclick="doGTranslate('es|es')">Español</a></li>
+                 <li class="enlacemenu"><a style="text-decoration:none;color:#5e7468;FONT-SIZE: 12px;" href="#" onclick="doGTranslate('es|en')">Inglés</a></li>
+                 <li class="enlacemenu" style="width: 40px;text-align: center;"><a style="text-decoration:none;color:#5e7468;" href="<?php echo $Config_DatoFacebook;?>"><i class="fa-brands fa-facebook-f"></i></a></li>
+                 <li class="enlacemenu" style="width: 40px;text-align: center;"><a style="text-decoration:none;color:#5e7468;" href="<?php echo $Config_DatoGoogle;?>"><i class="fa-brands fa-instagram"></i></a></li>
                </ul>
               </div>
             </div>
@@ -24,21 +24,21 @@
 
           <div class="PageLayoutstyles__NavWrapper-sc-6z0rbm-4 dsxBrK page-layout-nav-wrapper">
             <nav data-testid="pageNavigation" data-e2e="pageNavigation" class="Navigationstyles__NavBar-i7oaj0-7 fgmjpb">
-              <ul data-e2e="pageNavigationMenu" class="Navigationstyles__NavMenu-i7oaj0-6 bOarrY" style="background-color: #F0E0D3;overflow-x: auto;">
+              <ul data-e2e="pageNavigationMenu" class="Navigationstyles__NavMenu-i7oaj0-6 bOarrY" style="background-color: #d4cfc8;overflow-x: auto;">
                 <li data-e2e="pageNavigationMenuItemHome" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/"  style="color:#571A28;">Inicio</a>
+                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/"  style="color:#5e7468;">Inicio</a>
                 </li>
                 <li data-e2e="pageNavigationMenuItemRooms" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/paquetes/"  style="color:#571A28;">Paquetes</a>
+                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/paquetes/"  style="color:#5e7468;">Paquetes</a>
                 </li>
                 <li data-e2e="pageNavigationMenuItemRooms" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/habitaciones/"  style="color:#571A28;">Habitaciones</a>
+                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/habitaciones/"  style="color:#5e7468;">Habitaciones</a>
                 </li>
                 <li data-e2e="pageNavigationMenuItemOffers" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/galeria/"  style="color:#571A28;">Galería</a>
+                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/galeria/"  style="color:#5e7468;">Galería</a>
                 </li>
                 <li data-e2e="pageNavigationMenuItemGallery" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/localizacion/"  style="color:#571A28;">Localización</a>
+                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/localizacion/"  style="color:#5e7468;">Localización</a>
                 </li>
               </ul>
             </nav>
@@ -65,7 +65,7 @@
                       
                     
                      <div class="container">
-                        <button data-e2e="findHotel" class="sc-htpNat sc-gqjmRU etECHr" style="background-color: #571A28;" type="submit">Revisar Disponibilidad</button>
+                        <button data-e2e="findHotel" class="sc-htpNat sc-gqjmRU etECHr" style="background-color: #5e7468;" type="submit">Revisar Disponibilidad</button>
                      </div>
                      <br>
                      
@@ -75,8 +75,8 @@
         </header>
         <style>
           .enlacemenu{
-            background-color: #f0e0d3;
-            color: #571A28;
+            background-color: #d4cfc8;
+            color: #5e7468;
             font-weight: bold;
             padding-top: 10px;
             padding-left: 5px;
@@ -126,7 +126,7 @@
 
 
 <header>
-  <div class="container-fluid" id="property-header-login" style="background-color: #571A28;">
+  <div class="container-fluid" id="property-header-login" style="background-color: #5e7468;">
     <div class="row">
       <div class="col-md-3" >
         <a aria-label="Hotel Coral Ilo"  href="<?php echo $URLBase;?>/" class="">
@@ -136,10 +136,10 @@
       <div class="col-md-6"></div>
       <div class="col-md-3" style="text-align: center;">
        <ul style="display: inline-flex;list-style: none;margin-top: 1rem;margin-bottom: 1rem;padding-left: 0rem;">
-         <li class="enlacemenu"><a style="text-decoration:none;color:#571A28;" href="#" onclick="doGTranslate('es|es')">Español</a></li>
-         <li class="enlacemenu"><a style="text-decoration:none;color:#571A28;" href="#" onclick="doGTranslate('es|en')">Inglés</a></li>
-         <li class="enlacemenu" style="width: 40px;text-align: center;"><a style="text-decoration:none;color:#571A28;" href="<?php echo $Config_DatoFacebook;?>"><i class="fa-brands fa-facebook-f"></i></a></li>
-         <li class="enlacemenu" style="width: 40px;text-align: center;"><a style="text-decoration:none;color:#571A28;" href="<?php echo $Config_DatoGoogle;?>"><i class="fa-brands fa-instagram"></i></a></li>
+         <li class="enlacemenu"><a style="text-decoration:none;color:#5e7468;" href="#" onclick="doGTranslate('es|es')">Español</a></li>
+         <li class="enlacemenu"><a style="text-decoration:none;color:#5e7468;" href="#" onclick="doGTranslate('es|en')">Inglés</a></li>
+         <li class="enlacemenu" style="width: 40px;text-align: center;"><a style="text-decoration:none;color:#5e7468;" href="<?php echo $Config_DatoFacebook;?>"><i class="fa-brands fa-facebook-f"></i></a></li>
+         <li class="enlacemenu" style="width: 40px;text-align: center;"><a style="text-decoration:none;color:#5e7468;" href="<?php echo $Config_DatoGoogle;?>"><i class="fa-brands fa-instagram"></i></a></li>
        </ul>
       </div>
     </div>
@@ -148,21 +148,21 @@
 
   <div class="PageLayoutstyles__NavWrapper-sc-6z0rbm-4 dsxBrK page-layout-nav-wrapper">
     <nav data-testid="pageNavigation" data-e2e="pageNavigation" class="Navigationstyles__NavBar-i7oaj0-7 fgmjpb">
-      <ul data-e2e="pageNavigationMenu" class="Navigationstyles__NavMenu-i7oaj0-6 bOarrY" style="background-color: #F0E0D3;">
+      <ul data-e2e="pageNavigationMenu" class="Navigationstyles__NavMenu-i7oaj0-6 bOarrY" style="background-color: #d4cfc8;">
         <li data-e2e="pageNavigationMenuItemHome" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/"  style="color:#571A28;">Inicio</a>
+          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/"  style="color:#5e7468;">Inicio</a>
         </li>
         <li data-e2e="pageNavigationMenuItemRooms" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/paquetes/"  style="color:#571A28;">Paquetes</a>
+          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/paquetes/"  style="color:#5e7468;">Paquetes</a>
         </li>
         <li data-e2e="pageNavigationMenuItemRooms" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/habitaciones/"  style="color:#571A28;">Habitaciones</a>
+          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/habitaciones/"  style="color:#5e7468;">Habitaciones</a>
         </li>
         <li data-e2e="pageNavigationMenuItemOffers" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/galeria/"  style="color:#571A28;">Galería</a>
+          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/galeria/"  style="color:#5e7468;">Galería</a>
         </li>
         <li data-e2e="pageNavigationMenuItemGallery" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/localizacion/"  style="color:#571A28;">Localización</a>
+          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/localizacion/"  style="color:#5e7468;">Localización</a>
         </li>
       </ul>
     </nav>
@@ -180,7 +180,7 @@
               <div class="sc-gGBfsJ kOHfPD"></div>
               <label for="" class="texto_portada_a">Salida</label>
               <input type="text" placeholder="Salida..."  name="fecha_salida" id="birthday2"  value="<?php echo date("d/m/Y", strtotime("+1 day")); ?>" />
-              <button data-e2e="findHotel" class="sc-htpNat sc-gqjmRU etECHr" style="background-color: #571A28;margin-left: 8px;" type="submit">Revisar Disponibilidad</button>
+              <button data-e2e="findHotel" class="sc-htpNat sc-gqjmRU etECHr" style="background-color: #5e7468;margin-left: 8px;" type="submit">Revisar Disponibilidad</button>
               </div>
             </div>
           </form>
@@ -194,8 +194,8 @@
 
 <style>
   .enlacemenu{
-    background-color: #f0e0d3;
-    color: #571A28;
+    background-color: #d4cfc8;
+    color: #5e7468;
     font-weight: bold;
     padding-top: 10px;
     padding-left: 5px;

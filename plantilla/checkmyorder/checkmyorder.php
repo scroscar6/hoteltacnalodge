@@ -29,7 +29,7 @@ font-weight: bold;
 text-transform: uppercase;
 margin-top: 25px;
 margin-bottom: 10px;
-color: #f0e0d3;">Reserva</h3>
+color: #d4cfc8;">Reserva</h3>
             <br>
         </div>
   </section>
@@ -87,7 +87,7 @@ color: #f0e0d3;">Reserva</h3>
 
                                     <div style="margin-top: 20px;display: flex;">
                                         <input type="checkbox" name="terminos" id="terminos" style="margin-right: 10px;">
-                                        <label for="check-a">Para continuar, debes aceptar los <a href="https://hostalcoralilo.com/servicios/7-reglamento-interno" target="_blank">Términos y Condiciones</a>.</label>
+                                        <label for="check-a">Para continuar, debes aceptar los <a href="https://hoteltacnalodge.com/servicios/7-reglamento-interno" target="_blank">Términos y Condiciones</a>.</label>
                                     </div>
                                     <span class="fw-separator"></span><br><br><br>
                                     <button class="action-button btn no-shdow-btn color-bg " id="datos_comprobacion" class="sc-htpNat sc-gqjmRU etECHr" style="background-color: #5e7468;color:#ffffff;"><i class="fal fa-angle-right"></i>Confirmar Reserva</button>
@@ -140,10 +140,10 @@ color: #f0e0d3;">Reserva</h3>
                 </div>
             </div>
             <div class="cart-total" style="background-color: #5e7468 !important;">
-                <span class="cart-total_item_title" style="color: #f0e0d3 !important;">Costo <br>por noche</span>
+                <span class="cart-total_item_title" style="color: #d4cfc8 !important;">Costo <br>por noche</span>
                 <strong>
                     <b>
-                        <div style="font-weight: bold;color:#f0e0d3 !important;font-size: 27px;display: inline-flex;"> 
+                        <div style="font-weight: bold;color:#d4cfc8 !important;font-size: 27px;display: inline-flex;"> 
                         
                         <input type="hidden" name="preorigen" id="preorigen" value="<?php echo $GET_tarifa; ?>">
                         S/ <div id="precioview"><?php echo number_format($GET_tarifa,2,'.','.');?></div>
@@ -198,8 +198,8 @@ color: #f0e0d3;">Reserva</h3>
     }
     #birthday{
         float: left;
-        border: 1px solid #f0e0d3;
-        background:#f0e0d3;
+        border: 1px solid #d4cfc8;
+        background:#d4cfc8;
         text-align: right;
         border-radius: 6px;
         color: #666;
@@ -211,8 +211,8 @@ color: #f0e0d3;">Reserva</h3>
     }
     #birthday2{
         float: left;
-        border: 1px solid #f0e0d3;
-        background:#f0e0d3;
+        border: 1px solid #d4cfc8;
+        background:#d4cfc8;
         text-align: right;
         border-radius: 6px;
         color: #666;
@@ -249,8 +249,8 @@ color: #f0e0d3;">Reserva</h3>
         padding: 13px 18px;
         color: #fff;
         font-size: 16px;
-        border-bottom: 1px solid #f0e0d3;
-        background-color:#f0e0d3;
+        border-bottom: 1px solid #d4cfc8;
+        background-color:#d4cfc8;
     }
     .cart-details_header {
         display: inline-table;

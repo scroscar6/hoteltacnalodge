@@ -38,7 +38,7 @@
   <div id="__next">
     <div class="PageLayoutstyles__PageWrapper-sc-6z0rbm-0 cRBUzI page-layout ">
       <header>
-        <div class="HeaderLoginstyles__HeaderWrapper-sc-1tijayl-0 cqeBMz" data-testid="headerTitleLogin" data-e2e="propertyPageLayoutHeaderLoginWrapper" id="property-header-login" style="background-color: #571A28;">
+        <div class="HeaderLoginstyles__HeaderWrapper-sc-1tijayl-0 cqeBMz" data-testid="headerTitleLogin" data-e2e="propertyPageLayoutHeaderLoginWrapper" id="property-header-login" style="background-color: #5e7468;">
           <a aria-label="Hotel Premier" data-e2e="propertyPageLayoutHeaderLoginLogoLink" href="" class="HeaderLoginstyles__LogoLink-sc-1tijayl-1 fgWptr">
             <img alt="Hotel Premier" data-e2e="propertyPageLayoutHeaderLoginLogoImage" role="presentation" src="logo2.png" class="HeaderLoginstyles__LogoImg-sc-1tijayl-2 kuOFyW" />
           </a>
@@ -50,7 +50,7 @@
 
         <div class="PageLayoutstyles__NavWrapper-sc-6z0rbm-4 dsxBrK page-layout-nav-wrapper">
         	<nav data-testid="pageNavigation" data-e2e="pageNavigation" class="Navigationstyles__NavBar-i7oaj0-7 fgmjpb">
-        		<ul data-e2e="pageNavigationMenu" class="Navigationstyles__NavMenu-i7oaj0-6 bOarrY" style="background-color: #F0E0D3;">
+        		<ul data-e2e="pageNavigationMenu" class="Navigationstyles__NavMenu-i7oaj0-6 bOarrY" style="background-color: #d4cfc8;">
         			<li data-e2e="pageNavigationMenuItemHome" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
         				<a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href=""  style="color:#134357;">Inicio</a>
         			</li>

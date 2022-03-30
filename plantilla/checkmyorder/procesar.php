@@ -4,14 +4,14 @@
     date_default_timezone_set('America/Lima');
     setlocale(LC_TIME, 'es_ES.UTF-8');
     setlocale(LC_ALL,"es_ES");
-    include('../../../../admin.hostalcoralilo.com/public_html/ClsConexion.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/includes/funciones.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/includes/XSS.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/Habitacion/Clases/ClsHabitacion.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/Venta/Clases/ClsVenta.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/Habitacion/Clases/ClsHabitacionFoto.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/HabitacionCategoria/Clases/ClsHabitacionCategoria.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/Config/Clases/ClsConfig.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/ClsConexion.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/includes/funciones.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/includes/XSS.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/Habitacion/Clases/ClsHabitacion.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/Venta/Clases/ClsVenta.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/Habitacion/Clases/ClsHabitacionFoto.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/HabitacionCategoria/Clases/ClsHabitacionCategoria.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/Config/Clases/ClsConfig.php');
     require_once '../../sendgrid-php/sendgrid-php.php';
     $CConexion = new ClsConexion();
     $ObjHabitacion = new ClsHabitacion();
@@ -34,20 +34,20 @@
     $precio = (string)($_POST["precio"]);
     $wan_adultos = (string)($_POST["wan_adultos"]);
     $wan_ninios = (string)($_POST["wan_ninios"]);
-    include('../../../../admin.hostalcoralilo.com/public_html/Config.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Config.php');
 ?>
 <?php
     $email_route = new \SendGrid\Mail\Mail();
     
-    $email_route->setFrom('reservas@hostalcoralilo.com', $ConfigFromName);
+    $email_route->setFrom('reservas@hoteltacnalodge.com', $ConfigFromName);
 
     $tos = [
-        "reservas@hostalcoralilo.com" => "RESERVA DESDE LA WEB",
-        $email => "RESERVA ENVIADA - HOSTAL CORAL ILO"
+        "reservas@hoteltacnalodge.com" => "RESERVA DESDE LA WEB",
+        $email => "RESERVA ENVIADA - HOTEL TACNA LODGE"
     ];
     $email_route->addTos($tos);
 
-    $email_route->setSubject(utf8_decode('RESERVA HOSTAL CORAL ILO'));
+    $email_route->setSubject(utf8_decode('RESERVA HOTEL TACNA LODGE'));
      $email_route->addContent(
     "text/html", '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
         <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
@@ -237,7 +237,7 @@
                                               <td style="padding:5px 5px 5px 0px; line-height:20px; text-align:inherit; background-color:#e5dcd2;" height="100%" valign="top" bgcolor="#e5dcd2" role="module-content">
                                                 <div>
                                                   <div style="font-family: inherit; text-align: right">
-                                                    <a href="https//hostalcoralilo.com">
+                                                    <a href="https//hoteltacnalodge.com">
                                                       <span style="font-size: 10px; color: #6f6860">
                                                         <u>Ver esta dirección de correo electrónico en su navegador.</u>
                                                       </span>
@@ -249,7 +249,7 @@
                                             </tr>
                                           </tbody>
                                         </table>
-                                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:30px 0px 30px 0px;" bgcolor="#571a28" data-distribution="1">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:30px 0px 30px 0px;" bgcolor="#5e7468" data-distribution="1">
                                           <tbody>
                                             <tr role="module-content">
                                               <td height="100%" valign="top">
@@ -262,7 +262,7 @@
                                                             <tr>
                                                               <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
                                                                 <div style="font-family: inherit; text-align: center">
-                                                                    <span style="color: #80817f; font-size: 14px">WWW.HOSTALCORALILO.COM</span>
+                                                                    <span style="color: #80817f; font-size: 14px">WWW.hoteltacnalodge.com</span>
                                                                   </div>
                                                               </td>
                                                             </tr>
@@ -300,7 +300,7 @@
                                           <tbody>
                                             <tr>
                                               <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
-                                                <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;" width="600" alt="" data-proportionally-constrained="true" data-responsive="false" src="https://hostalcoralilo.com/logomail.png" height="189">
+                                                <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;" width="600" alt="" data-proportionally-constrained="true" data-responsive="false" src="https://hoteltacnalodge.com/logomail.png" height="189">
                                               </td>
                                             </tr>
                                           </tbody>
@@ -647,8 +647,8 @@
                                                 <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
                                                   <tbody>
                                                     <tr>
-                                                      <td align="center" bgcolor="#571a28" class="inner-td" style="border-radius:6px; font-size:16px; text-align:center; background-color:inherit;">
-                                                        <a href="" style="background-color:#571a28; border:1px solid #571a28; border-color:#571a28; border-radius:0px; border-width:1px; color:#FFFFFF; display:inline-block; font-size:12px; font-weight:700; letter-spacing:0px; line-height:normal; padding:12px 40px 12px 40px; text-align:center; text-decoration:none; border-style:solid; font-family:inherit;" target="_blank">NUESTRO REGLAMENTO</a>
+                                                      <td align="center" bgcolor="#5e7468" class="inner-td" style="border-radius:6px; font-size:16px; text-align:center; background-color:inherit;">
+                                                        <a href="" style="background-color:#5e7468; border:1px solid #5e7468; border-color:#5e7468; border-radius:0px; border-width:1px; color:#FFFFFF; display:inline-block; font-size:12px; font-weight:700; letter-spacing:0px; line-height:normal; padding:12px 40px 12px 40px; text-align:center; text-decoration:none; border-style:solid; font-family:inherit;" target="_blank">NUESTRO REGLAMENTO</a>
                                                       </td>
                                                     </tr>
                                                   </tbody>
@@ -671,7 +671,7 @@
                                                 <div>
                                                   <div style="font-family: inherit; text-align: center">
                                                     <span style="color: #ffffff; font-size: 12px">
-                                                      <strong>Gracias por consultar en Hostal Coral Ilo. Si necesita contáctarnos, debe comunicarse en los link de contácto de nuestro sitio web</strong>
+                                                      <strong>Gracias por consultar en HOTEL TACNA LODGE. Si necesita contáctarnos, debe comunicarse en los link de contácto de nuestro sitio web</strong>
                                                     </span>
                                                   </div>
                                                   <div style="font-family: inherit; text-align: center">
@@ -688,7 +688,7 @@
                                             </tr>
                                           </tbody>
                                         </table>
-                                        <div data-role="module-unsubscribe" class="module" role="module" data-type="unsubscribe" style="background-color:#571a28; color:#444444; font-size:12px; line-height:20px; padding:16px 16px 16px 16px; text-align:Center;display:none;" data-muid="4e838cf3-9892-4a6d-94d6-170e474d21e5">
+                                        <div data-role="module-unsubscribe" class="module" role="module" data-type="unsubscribe" style="background-color:#5e7468; color:#444444; font-size:12px; line-height:20px; padding:16px 16px 16px 16px; text-align:Center;display:none;" data-muid="4e838cf3-9892-4a6d-94d6-170e474d21e5">
                                           <div class="Unsubscribe--addressLine">
                                             <p class="Unsubscribe--senderName" style="font-size:12px; line-height:20px;">{{Sender_Name}}</p>
                                             <p style="font-size:12px; line-height:20px;">
@@ -703,7 +703,7 @@
                                         <table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button" data-type="button" role="module" style="table-layout:fixed;" width="100%" data-muid="04084f31-d714-4785-98c7-39de4df9fb7b">
                                           <tbody>
                                             <tr>
-                                              <td align="center" bgcolor="#571a28" class="outer-td" style="padding:20px 0px 20px 0px; background-color:#571a28;">
+                                              <td align="center" bgcolor="#5e7468" class="outer-td" style="padding:20px 0px 20px 0px; background-color:#5e7468;">
                                                 <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
                                                   <tbody>
                                                     <tr>

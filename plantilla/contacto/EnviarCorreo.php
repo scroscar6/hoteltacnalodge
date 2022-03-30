@@ -4,14 +4,14 @@
     date_default_timezone_set('America/Lima');
     setlocale(LC_TIME, 'es_ES.UTF-8');
     setlocale(LC_ALL,"es_ES");
-    include('../../../../admin.hostalcoralilo.com/public_html/ClsConexion.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/includes/funciones.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/includes/XSS.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/Habitacion/Clases/ClsHabitacion.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/Venta/Clases/ClsVenta.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/Habitacion/Clases/ClsHabitacionFoto.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/HabitacionCategoria/Clases/ClsHabitacionCategoria.php');
-    include('../../../../admin.hostalcoralilo.com/public_html/Modulos/Config/Clases/ClsConfig.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/ClsConexion.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/includes/funciones.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/includes/XSS.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/Habitacion/Clases/ClsHabitacion.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/Venta/Clases/ClsVenta.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/Habitacion/Clases/ClsHabitacionFoto.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/HabitacionCategoria/Clases/ClsHabitacionCategoria.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Modulos/Config/Clases/ClsConfig.php');
     require_once '../../sendgrid-php/sendgrid-php.php';
     $CConexion = new ClsConexion();
     $ObjHabitacion = new ClsHabitacion();
@@ -26,20 +26,20 @@
     $telefono = (string)LimpiarXSS($_POST["telefono"]);
     $asunto = (string)LimpiarXSS($_POST["asunto"]);
     $mensaje = (string)LimpiarXSS($_POST["mensaje"]);
-    include('../../../../admin.hostalcoralilo.com/public_html/Config.php');
+    include('../../../../admin.hoteltacnalodge.com/public_html/Config.php');
 ?>
 <?php
     $email_route = new \SendGrid\Mail\Mail();
     
-    $email_route->setFrom('reservas@hostalcoralilo.com', $ConfigFromName);
+    $email_route->setFrom('reservas@hoteltacnalodge.com', $ConfigFromName);
 
     $tos = [
-        "reservas@hostalcoralilo.com" => "CONSULTA DESDE LA WEB",
-        $correo => "CONSULTA ENVIADA - HOSTAL CORAL ILO"
+        "reservas@hoteltacnalodge.com" => "CONSULTA DESDE LA WEB",
+        $correo => "CONSULTA ENVIADA - HOTEL TACNA LODGE"
     ];
     $email_route->addTos($tos);
 
-    $email_route->setSubject(utf8_decode('HOSTAL CORAL ILO - CONSULTA'));
+    $email_route->setSubject(utf8_decode('HOTEL TACNA LODGE - CONSULTA'));
     $email_route->addContent(
     "text/html", '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
@@ -229,7 +229,7 @@
                                       <td style="padding:5px 5px 5px 0px; line-height:20px; text-align:inherit; background-color:#e5dcd2;" height="100%" valign="top" bgcolor="#e5dcd2" role="module-content">
                                         <div>
                                           <div style="font-family: inherit; text-align: right">
-                                            <a href="https//hostalcoralilo.com">
+                                            <a href="https//hoteltacnalodge.com">
                                               <span style="font-size: 10px; color: #6f6860">
                                                 <u>Ver esta dirección de correo electrónico en su navegador.</u>
                                               </span>
@@ -254,7 +254,7 @@
                                                     <tr>
                                                       <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
                                                         <div style="font-family: inherit; text-align: center">
-                                                            <span style="color: #80817f; font-size: 14px">WWW.HOSTALCORALILO.COM</span>
+                                                            <span style="color: #80817f; font-size: 14px">WWW.hoteltacnalodge.com</span>
                                                           </div>
                                                       </td>
                                                     </tr>
@@ -292,7 +292,7 @@
                                   <tbody>
                                     <tr>
                                       <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
-                                        <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;" width="600" alt="" data-proportionally-constrained="true" data-responsive="false" src="https://hostalcoralilo.com/logomail.png" height="189">
+                                        <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;" width="600" alt="" data-proportionally-constrained="true" data-responsive="false" src="https://hoteltacnalodge.com/logomail.png" height="189">
                                       </td>
                                     </tr>
                                   </tbody>
@@ -633,7 +633,7 @@
                                         <div>
                                           <div style="font-family: inherit; text-align: center">
                                             <span style="color: #ffffff; font-size: 12px">
-                                              <strong>Gracias por consultar en Hostal Coral Ilo. Si necesita contáctarnos, debe comunicarse en los link de contácto de nuestro sitio web</strong>
+                                              <strong>Gracias por consultar en HOTEL TACNA LODGE. Si necesita contáctarnos, debe comunicarse en los link de contácto de nuestro sitio web</strong>
                                             </span>
                                           </div>
                                           <div style="font-family: inherit; text-align: center">

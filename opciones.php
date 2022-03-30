@@ -78,11 +78,11 @@ file_exists(SSADMIN.'Config.php') ? require_once(SSADMIN.'Config.php') : die('<s
 					$ssMetaDesc = '';
 				break;
 				case "quark":
-					header("Location: https://admin.hostalcoralilo.com");
+					header("Location: https://admin.hoteltacnalodge.com");
 					die();
 				break;
 				case "was":
-					header("Location: https://admin.hostalcoralilo.com");
+					header("Location: https://admin.hoteltacnalodge.com");
 					die();
 				break;
 				case "mail":
@@ -105,7 +105,7 @@ file_exists(SSADMIN.'Config.php') ? require_once(SSADMIN.'Config.php') : die('<s
 					$ssTitulo  	= "Contáctanos";
 				break;
 				default:
-					header("Location: https://hostalcoralilo.com");
+					header("Location: https://hoteltacnalodge.com");
 					die();
 				break;
 			}
@@ -229,10 +229,10 @@ file_exists(SSADMIN.'Config.php') ? require_once(SSADMIN.'Config.php') : die('<s
 			}
 		break;
 		case 'tourold':
-			header("Location: https://hostalcoralilo.com");
+			header("Location: https://hoteltacnalodge.com");
 		break;
 		case 'contactanos':
-			header("Location: https://hostalcoralilo.com/contacto");
+			header("Location: https://hoteltacnalodge.com/contacto");
 		break;
 		case 'evento':
 			$ssDir 		= "plantilla/evento";
@@ -820,7 +820,7 @@ file_exists(SSADMIN.'Config.php') ? require_once(SSADMIN.'Config.php') : die('<s
 		break;
 		default:
 			$optError = 1;
-			header("Location: https://hostalcoralilo.com");
+			header("Location: https://hoteltacnalodge.com");
 			die();
 		break;
 	}

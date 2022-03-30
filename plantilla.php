@@ -15,10 +15,10 @@
           <div class="PageLayoutstyles__FooterWrapper-sc-6z0rbm-5 dtzKfV page-layout-nav-wrapper" id="page-layout-footer">
  
             <div data-e2e="footerWrapper" class="Footerstyles__FooterWrapper-x1spqp-0 hNZovk">
-              <footer aria-label="Footer" role="contentinfo" class="sc-eerKOB hNSmhF" style="background-color: #571a28 !important;">
+              <footer aria-label="Footer" role="contentinfo" class="sc-eerKOB hNSmhF" style="background-color: #5e7468 !important;">
                 <div class="sc-chPdSV sc-kGXeez gIrtCK" style="padding-top: 0px;padding-bottom: 0px;">
                     <div class="sc-eHgmQL sc-cvbbAY sc-emmjRN cZdKSi">
-                      <p class="sc-jzgbtB bbmVPl" style="margin-top: 1rem;margin-bottom: 1rem;">© <?php echo date('Y')?> Derechos Reservados Hostal Coral ilo
+                      <p class="sc-jzgbtB bbmVPl" style="margin-top: 1rem;margin-bottom: 1rem;">© <?php echo date('Y')?> Derechos Reservados HOTEL TACNA LODGE
                       </p>
                     </div>
                   </div>
@@ -73,7 +73,7 @@
           width: 40px;
         }
         .wan-spinner .minus, .wan-spinner .plus {
-          color: #571A28;
+          color: #5e7468;
           cursor: pointer;
           text-decoration: none;
           width: 15px;

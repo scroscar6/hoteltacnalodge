@@ -7,7 +7,7 @@
   setlocale(LC_ALL, 'es_ES');
 ?>
 <?php if ( $detectM->isMobile() ||  $detectM->isTablet()): ?>
-<div class="container-fluid" style="background-color: #571A28;padding-left: 0px;padding-right: 0px;">
+<div class="container-fluid" style="background-color: #5e7468;padding-left: 0px;padding-right: 0px;">
   <section>
         <div class="col-md-12">
             <h3 style="text-align: center;
@@ -17,13 +17,13 @@
               text-transform: uppercase;
               margin-top: 15px;
               margin-bottom: 15px;
-              color: #f0e0d3;">
+              color: #d4cfc8;">
               <?php echo $detalle->titulo;?></h3>
         </div>
   </section>
 </div>
 <?php else: ?>
-<div class="container-fluid" style="background-color: #571A28;padding-left: 0px;padding-right: 0px;">
+<div class="container-fluid" style="background-color: #5e7468;padding-left: 0px;padding-right: 0px;">
   <section>
         <div class="col-md-12">
             <h3 style="text-align: center;
@@ -33,7 +33,7 @@
               text-transform: uppercase;
               margin-top: 25px;
               margin-bottom: 10px;
-              color: #f0e0d3;">
+              color: #d4cfc8;">
               <?php echo $detalle->titulo;?></h3>
             <br>
         </div>
@@ -99,7 +99,7 @@
           </form>
         </div>
         <div class="box-titulo-premier2">
-          <div class="fb-page" data-href="https://www.facebook.com/Hostal-CORAL-ILO-107123895050863" data-tabs="timeline" data-width="100%" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Hostal-CORAL-ILO-107123895050863" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Hostal-CORAL-ILO-107123895050863">Hostal CORAL ILO</a></blockquote></div>
+          <div class="fb-page" data-href="https://www.facebook.com/salondeeventostacnalodge" data-tabs="timeline" data-width="100%" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/salondeeventostacnalodge" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/salondeeventostacnalodge">HOTEL TACNA LODGE</a></blockquote></div>
         </div>
       </div>
   </div>
@@ -114,20 +114,20 @@
 .box-titulo-premier2{
   padding-top: 20px;
  padding-bottom: 20px;
-  background-color: #f0e0d3;
+  background-color: #d4cfc8;
 
   width: 100%;
   
 }
 .titulo-premier{
-  color: #571A28;
+  color: #5e7468;
   font-size: 2em;
   font-weight: bold;
 }
 
 .titulo-reserva{
   font-size: 24px;
-  color: #571A28;
+  color: #5e7468;
   margin-left: 26px;
 }
 .enlace-fecha-entrada{
@@ -135,7 +135,7 @@
     text-align: center;
     /*margin-bottom: 20px;*/
     text-decoration: none;
-    color: #571A28;
+    color: #5e7468;
     font-weight: bold;
     width: 100%;
     border-color: transparent;
@@ -151,7 +151,7 @@
     text-align: center;
     /*margin-bottom: 20px;*/
     text-decoration: none;
-    color: #571A28;
+    color: #5e7468;
     font-weight: bold;
     width: 100%;
     border-color: transparent;
@@ -173,7 +173,7 @@
   border: 1px solid #E8C792;
   margin: 0 20px;
   border-radius: 8px;
-  background-color: #571A28;
+  background-color: #5e7468;
 }
 .prec1 {
   font-size: 20px;
@@ -196,9 +196,9 @@
     font-weight: 600;
     font-size: 30px;
     color: #f8bb92;
-    background-color: #571A28;
+    background-color: #5e7468;
     border-radius: 6px;
-    border: 2px solid #571A28;
+    border: 2px solid #5e7468;
     text-align: center;
     display: block;
     margin-left: 22px;

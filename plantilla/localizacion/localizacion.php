@@ -1,5 +1,5 @@
 <?php if ( $detectM->isMobile() ||  $detectM->isTablet()): ?>
-<div class="container-fluid" style="background-color: #571A28;padding-left: 0px;padding-right: 0px;">
+<div class="container-fluid" style="background-color: #5e7468;padding-left: 0px;padding-right: 0px;">
   <section>
         <div class="col-md-12">
             <h3 style="text-align: center;
@@ -9,13 +9,13 @@
 							text-transform: uppercase;
 							margin-top: 15px;
 							margin-bottom: 15px;
-							color: #f0e0d3;">
+							color: #d4cfc8;">
 							Localización</h3>
         </div>
   </section>
 </div>
 <?php else: ?>
-	<div class="container-fluid" style="background-color: #571A28;padding-left: 0px;padding-right: 0px;">
+	<div class="container-fluid" style="background-color: #5e7468;padding-left: 0px;padding-right: 0px;">
   <section>
         <div class="col-md-12">
             <h3 style="text-align: center;
@@ -25,7 +25,7 @@
 							text-transform: uppercase;
 							margin-top: 25px;
 							margin-bottom: 10px;
-							color: #f0e0d3;">
+							color: #d4cfc8;">
 							Localización</h3>
             <br>
         </div>
@@ -41,7 +41,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2><strong style="color: #571A28;">PONERSE EN</strong> contácto</h2>
+				<h2><strong style="color: #5e7468;">PONERSE EN</strong> contácto</h2>
 				<p>Ingrese sus datos y escríbanos. Estaremos gustosos de reponder todas sus inquietudes y consultas.</p>
 			</div>
 		</div>
@@ -70,7 +70,7 @@
 						<div class="form-group col-md-12">
 							<textarea name="mensaje" placeholder="Mensaje" id="mensaje" class="form-control contact_comment"></textarea>
 						</div>
-						<input class="btn btn-default contact-usbtn" type="submit" name="submit" id="submit" value="Enviar información" style="background-color: #571A28;margin-top: 22px;color: #fff;">
+						<input class="btn btn-default contact-usbtn" type="submit" name="submit" id="submit" value="Enviar información" style="background-color: #5e7468;margin-top: 22px;color: #fff;">
 						<!--form_ltbox-->
 					</div>
 				</form>

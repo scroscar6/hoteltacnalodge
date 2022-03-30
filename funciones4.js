@@ -67,8 +67,8 @@
               valueChanged: function(element, val) {
               }
         };
-        $(".wan-spinner-2").WanSpinner(options).css("border-color", "#f0e0d3");
-        $(".wan-spinner-3").WanSpinner(options2).css("border-color", "#f0e0d3");
+        $(".wan-spinner-2").WanSpinner(options).css("border-color", "#d4cfc8");
+        $(".wan-spinner-3").WanSpinner(options2).css("border-color", "#d4cfc8");
 
         $('#birthday').datepicker({
             language:'es',
@@ -284,7 +284,7 @@ let API = function() {
                 let contHabitaciones = '';
                 habitaciones.forEach(function(habitacion) {
                     console.log(habitacion);
-                    let htmlhab = '<li class="RoomsGridSectionRoomstyles__Wrapper-sc-1qrgj78-3 bRadcm"><button type="button" class="RoomsGridSectionRoomstyles__Button-sc-1qrgj78-0 jRceAf"><h3 class="RoomsGridSectionRoomstyles__Title-sc-1qrgj78-2 kQLteu">'+habitacion.nombre_tipo_habitacion+'</h3><picture><img alt="" style="width: 100%;" src="https://cdn.hotelpremier.com.pe/media/public/2/291636bf7a4f397623bd45c394ab3f06a_portada-principal-1920-x-800.webp" class="sc-gJWqzi caFUvj"></picture><a href="https://hotelpremier.com.pe/miorden/'+Math.trunc(habitacion.tarifa)+'-'+habitacion.nombre_tipo_habitacion.toLowerCase().split(' ').join('00')+'-'+llegada.split('/').join('m')+'-'+salida.split('/').join('m')+'-'+habitacion.id_habitacion+'"><span style="background-color: #571A28;" class="RoomsGridSectionRoomstyles__CTA-sc-1qrgj78-1 jUwciz">Reservar s/.'+habitacion.tarifa+'</span></a></button></li>';
+                    let htmlhab = '<li class="RoomsGridSectionRoomstyles__Wrapper-sc-1qrgj78-3 bRadcm"><button type="button" class="RoomsGridSectionRoomstyles__Button-sc-1qrgj78-0 jRceAf"><h3 class="RoomsGridSectionRoomstyles__Title-sc-1qrgj78-2 kQLteu">'+habitacion.nombre_tipo_habitacion+'</h3><picture><img alt="" style="width: 100%;" src="https://cdn.hotelpremier.com.pe/media/public/2/291636bf7a4f397623bd45c394ab3f06a_portada-principal-1920-x-800.webp" class="sc-gJWqzi caFUvj"></picture><a href="https://hotelpremier.com.pe/miorden/'+Math.trunc(habitacion.tarifa)+'-'+habitacion.nombre_tipo_habitacion.toLowerCase().split(' ').join('00')+'-'+llegada.split('/').join('m')+'-'+salida.split('/').join('m')+'-'+habitacion.id_habitacion+'"><span style="background-color: #5e7468;" class="RoomsGridSectionRoomstyles__CTA-sc-1qrgj78-1 jUwciz">Reservar s/.'+habitacion.tarifa+'</span></a></button></li>';
                     contHabitaciones = contHabitaciones + htmlhab;
                 });
                 $('#lista-habitaciones').empty();
