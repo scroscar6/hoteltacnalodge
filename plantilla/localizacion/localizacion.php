@@ -34,8 +34,8 @@
 <?php endif; ?>
 
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1130.361067350296!2d-71.34452471548968!3d-17.647027118481525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91445b050847b29f%3A0x3ae6a44a0c85b152!2sHostal%20Coral%20Ilo!5e0!3m2!1ses!2spe!4v1646926791830!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6204.649146224424!2d-70.12893199712698!3d-17.866208619557856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915add42677d9457%3A0x2f0f4a0df30ccd9d!2sTACNA%20LODGE%20HOTEL%20BOUTIQUE!5e0!3m2!1ses!2spe!4v1648604877458!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <section class="contactenos padding_top_80 padding_bottom_80" style="padding-bottom: 80px;padding-top: 80px;">
 	<div class="container">
