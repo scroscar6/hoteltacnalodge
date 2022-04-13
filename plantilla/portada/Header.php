@@ -32,7 +32,7 @@
                   <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/paquetes/"  style="color:#5e7468;">Paquetes</a>
                 </li>
                 <li data-e2e="pageNavigationMenuItemRooms" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/habitaciones/"  style="color:#5e7468;">Habitaciones</a>
+                  <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/habitaciones/"  style="color:#5e7468;">Reservaciones</a>
                 </li>
                 <li data-e2e="pageNavigationMenuItemOffers" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
                   <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/galeria/"  style="color:#5e7468;">Galería</a>
@@ -156,7 +156,7 @@
           <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/paquetes/"  style="color:#5e7468;">Paquetes</a>
         </li>
         <li data-e2e="pageNavigationMenuItemRooms" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
-          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/habitaciones/"  style="color:#5e7468;">Habitaciones</a>
+          <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/habitaciones/"  style="color:#5e7468;">Reservaciones</a>
         </li>
         <li data-e2e="pageNavigationMenuItemOffers" class="Navigationstyles__NavMenuItem-i7oaj0-1 gZnmm">
           <a class="Navigationstyles__NavMenuItemLink-i7oaj0-0 hoyFgi" href="<?php echo $URLBase;?>/galeria/"  style="color:#5e7468;">Galería</a>

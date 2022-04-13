@@ -51,7 +51,7 @@
                 <img alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;" src="<?php echo $URLBaseCDN;?>/media/habitacion/image/<?php echo $datos->id;?>/<?php echo $datos->imagen;?>" class="sc-gJWqzi caFUvj">
               </picture>
               <a style="text-decoration: navajowhite;text-transform: uppercase;" href="<?php echo $URLBase;?>/habitacion/<?php echo $datos->id;?>-<?php echo urls_amigables($datos->titulo);?>">
-                <span style="font-size: 18px;background-color: #d4cfc8;color: #5e7468;border-radius: 5px;" class="RoomsGridSectionRoomstyles__CTA-sc-1qrgj78-1 jUwciz">Más detalles</span>
+                <span style="font-size: 18px;background-color: #d4cfc8;color: #5e7468;border-radius: 5px;" class="RoomsGridSectionRoomstyles__CTA-sc-1qrgj78-1 jUwciz">Reservar</span>
               </a>
           </button>
         </li>
