@@ -1,29 +1,25 @@
 <?php if ( $detectM->isMobile() ||  $detectM->isTablet()): ?>
-
   <div class="container-fluid" style="padding-right: 0;padding-left: 0;">
-    
-      
-        <div class="owl-carousel">
-          <?php $ObjPublicidadPortada = new ClsPublicidad();?>
-          <?php $ObjPublicidadPortada->idpublicidadcategoria = 2; ?>
-          <?php $ListaPortada = $ObjPublicidadPortada->ObtenerPermitidosPorCategoria(); ?>
-          <?php $cont = count($ListaPortada);?>
-          <?php $ListaPortada = convertObj($ListaPortada); ?>
-          <?php if ($cont > 0): ?>
-            <?php foreach ($ListaPortada as $dataList): ?>
-              <?php if($navegador_user == 'Safari'): ?>
-                <div class="">
-                  <img src="<?php echo $URLBaseCDN;?>/media/public/<?php echo $dataList->id;?>/<?php echo $dataList->imagen;?>" alt="<?php echo $dataList->titulo;?>">
-                </div>
-              <?php else:?>
-                <div class="">
-                  <img src="<?php echo $URLBaseCDN;?>/media/public/<?php echo $dataList->id;?>/<?php echo getWebp($dataList->imagen);?>" alt="<?php echo $dataList->titulo;?>">
-                </div>
-              <?php endif;?>
-            <?php endforeach ?>
-          <?php endif ?>
-        </div>
-   
+    <div class="owl-carousel">
+      <?php $ObjPublicidadPortada = new ClsPublicidad();?>
+      <?php $ObjPublicidadPortada->idpublicidadcategoria = 2; ?>
+      <?php $ListaPortada = $ObjPublicidadPortada->ObtenerPermitidosPorCategoria(); ?>
+      <?php $cont = count($ListaPortada);?>
+      <?php $ListaPortada = convertObj($ListaPortada); ?>
+      <?php if ($cont > 0): ?>
+        <?php foreach ($ListaPortada as $dataList): ?>
+          <?php if($navegador_user == 'Safari'): ?>
+            <div class="">
+              <img src="<?php echo $URLBaseCDN;?>/media/public/<?php echo $dataList->id;?>/<?php echo $dataList->imagen;?>" alt="<?php echo $dataList->titulo;?>">
+            </div>
+          <?php else:?>
+            <div class="">
+              <img src="<?php echo $URLBaseCDN;?>/media/public/<?php echo $dataList->id;?>/<?php echo getWebp($dataList->imagen);?>" alt="<?php echo $dataList->titulo;?>">
+            </div>
+          <?php endif;?>
+        <?php endforeach ?>
+      <?php endif ?>
+    </div>
   </div>
 <?php else: ?>
   <div class="container-fluid" style="padding-right: 0;padding-left: 0;">
@@ -204,7 +200,7 @@ color: #5e7468;">Ubicación</h3>
             <br>
         </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6204.649146224424!2d-70.12893199712698!3d-17.866208619557856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915add42677d9457%3A0x2f0f4a0df30ccd9d!2sTACNA%20LODGE%20HOTEL%20BOUTIQUE!5e0!3m2!1ses!2spe!4v1648604877458!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6204.649146224424!2d-70.12893199712698!3d-17.866208619557856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915add42677d9457%3A0x2f0f4a0df30ccd9d!2sTACNA%20LODGE%20HOTEL%20BOUTIQUE!5e0!3m2!1ses!2spe!4v1648604877458!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   </section>
 

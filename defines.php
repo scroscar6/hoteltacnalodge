@@ -1,6 +1,6 @@
 <?php
     if (!defined('SS_NYAA')) define('SS_NYAA',true);
-    if (!defined('_ADM')) define('_ADM','../../admin.hoteltacnalodge.com/public_html');        //RUTA DEL ADMINISTRADOR
+    if (!defined('_ADM')) define('_ADM','../../admin.tacnalodge.com/public_html');        //RUTA DEL ADMINISTRADOR
     if (!defined('_WEB')) define('_WEB','');				// Nombre de directorio WEB
     defined('SS_NYAA') or die;
     define('DS', DIRECTORY_SEPARATOR);              // "\" <-- Separador de directorio

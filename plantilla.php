@@ -32,7 +32,6 @@
   <a href="https://api.whatsapp.com/send?phone=51977212027&text=Hola%2C%20quiero%20mas%20informaci%C3%B3n" class="btn-wsp" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
   </a>
-
     <script src="<?php echo $URLBase; ?>/funciones4.js" type="text/javascript" charset="utf-8" ></script>
     <?php if ($Modulo == 'busqueda'): ?>
         <script>
